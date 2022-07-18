@@ -28,9 +28,10 @@ use App\Http\Controllers\search;
 // });
 // route::view('/',[search::class,'search']);
 route::view('/home', 'form');
+route::view('/home', 'form');
 
 route::post('/get_data', [search::class, 'get_data']);
- 
+
 route::post('/pass', [crud_controller::class, 'store']);
 route::get('/retrive', [list_data_controller::class, 'show']);
 route::get('/delete/{id}', [crud_controller::class, 'destroy']);
